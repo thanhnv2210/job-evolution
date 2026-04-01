@@ -2,9 +2,16 @@ import json
 import logging
 
 import anthropic
+import httpx
 from .models import Job, TaskScore, JobScoreResponse
 
 log = logging.getLogger(__name__)
+
+# connect=30 s  — generous for first TLS handshake (default is 5 s, which was too tight)
+# read=600 s    — streaming LLM with adaptive thinking can easily take minutes
+# write=30 s    — sending the prompt
+# pool=30 s     — waiting for a free connection from the pool
+_TIMEOUT = httpx.Timeout(connect=30.0, read=600.0, write=30.0, pool=30.0)
 
 _client: anthropic.AsyncAnthropic | None = None
 
@@ -28,7 +35,12 @@ regulatory constraints, creative demands, and interpersonal complexity.\
 def get_client() -> anthropic.AsyncAnthropic:
     global _client
     if _client is None:
-        _client = anthropic.AsyncAnthropic()
+        _client = anthropic.AsyncAnthropic(timeout=_TIMEOUT)
+        log.debug(
+            "Anthropic client created (connect=%.0fs read=%.0fs)",
+            _TIMEOUT.connect,
+            _TIMEOUT.read,
+        )
     return _client
 
 
