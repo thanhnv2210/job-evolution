@@ -1,0 +1,2802 @@
+[
+  {
+    "id": 1,
+    "role": "Backend Engineer",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Backend Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "60185-187399",
+    "daily_tasks": [
+      "Perform core tasks related to backend engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 2,
+    "role": "Frontend Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Frontend Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "64110-143331",
+    "daily_tasks": [
+      "Perform core tasks related to frontend engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 3,
+    "role": "DevOps Engineer",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "DevOps Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "79642-138187",
+    "daily_tasks": [
+      "Perform core tasks related to devops engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 4,
+    "role": "Data Analyst",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Data Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "92363-199726",
+    "daily_tasks": [
+      "Perform core tasks related to data analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 5,
+    "role": "Product Manager",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Product Manager working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "75622-125551",
+    "daily_tasks": [
+      "Perform core tasks related to product manager",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 6,
+    "role": "Mobile Developer",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Mobile Developer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "59945-158249",
+    "daily_tasks": [
+      "Perform core tasks related to mobile developer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 7,
+    "role": "Blockchain Engineer",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Blockchain Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "83264-177016",
+    "daily_tasks": [
+      "Perform core tasks related to blockchain engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 8,
+    "role": "Risk Analyst",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Risk Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "86673-148080",
+    "daily_tasks": [
+      "Perform core tasks related to risk analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 9,
+    "role": "Compliance Officer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Compliance Officer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "58719-159714",
+    "daily_tasks": [
+      "Perform core tasks related to compliance officer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 10,
+    "role": "Quantitative Developer",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Quantitative Developer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "50258-157408",
+    "daily_tasks": [
+      "Perform core tasks related to quantitative developer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 11,
+    "role": "Fraud Analyst",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Fraud Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "71050-168058",
+    "daily_tasks": [
+      "Perform core tasks related to fraud analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 12,
+    "role": "API Integration Engineer",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "API Integration Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "81549-177413",
+    "daily_tasks": [
+      "Perform core tasks related to api integration engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 13,
+    "role": "Cloud Architect",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Cloud Architect working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "92920-187068",
+    "daily_tasks": [
+      "Perform core tasks related to cloud architect",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 14,
+    "role": "UX Designer",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "UX Designer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "75833-182478",
+    "daily_tasks": [
+      "Perform core tasks related to ux designer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 15,
+    "role": "QA Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "QA Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "59098-171185",
+    "daily_tasks": [
+      "Perform core tasks related to qa engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 16,
+    "role": "Security Engineer",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Security Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "66101-169187",
+    "daily_tasks": [
+      "Perform core tasks related to security engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 17,
+    "role": "Business Analyst",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Business Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "53471-151148",
+    "daily_tasks": [
+      "Perform core tasks related to business analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 18,
+    "role": "Machine Learning Engineer",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Machine Learning Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "84405-103920",
+    "daily_tasks": [
+      "Perform core tasks related to machine learning engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 19,
+    "role": "Payment Operations Specialist",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Payment Operations Specialist working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "77444-161093",
+    "daily_tasks": [
+      "Perform core tasks related to payment operations specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 20,
+    "role": "Treasury Analyst",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Treasury Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "68757-149513",
+    "daily_tasks": [
+      "Perform core tasks related to treasury analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 21,
+    "role": "AML Analyst",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "AML Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "58749-194038",
+    "daily_tasks": [
+      "Perform core tasks related to aml analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 22,
+    "role": "Credit Risk Analyst",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Credit Risk Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "97574-148162",
+    "daily_tasks": [
+      "Perform core tasks related to credit risk analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 23,
+    "role": "Financial Software Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Financial Software Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "95162-131116",
+    "daily_tasks": [
+      "Perform core tasks related to financial software engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 24,
+    "role": "Trading Systems Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Trading Systems Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "51575-130611",
+    "daily_tasks": [
+      "Perform core tasks related to trading systems engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 25,
+    "role": "KYC Specialist",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "KYC Specialist working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "70238-198953",
+    "daily_tasks": [
+      "Perform core tasks related to kyc specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 26,
+    "role": "Data Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Data Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "61098-125312",
+    "daily_tasks": [
+      "Perform core tasks related to data engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 27,
+    "role": "Platform Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Platform Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "74851-101357",
+    "daily_tasks": [
+      "Perform core tasks related to platform engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 28,
+    "role": "Site Reliability Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Site Reliability Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "63512-116938",
+    "daily_tasks": [
+      "Perform core tasks related to site reliability engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 29,
+    "role": "Integration Architect",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Integration Architect working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "91347-110839",
+    "daily_tasks": [
+      "Perform core tasks related to integration architect",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 30,
+    "role": "Technical Product Manager",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Technical Product Manager working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "95647-154054",
+    "daily_tasks": [
+      "Perform core tasks related to technical product manager",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 31,
+    "role": "Growth Analyst",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Growth Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "85145-124445",
+    "daily_tasks": [
+      "Perform core tasks related to growth analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 32,
+    "role": "Customer Success Manager",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Customer Success Manager working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "52079-121804",
+    "daily_tasks": [
+      "Perform core tasks related to customer success manager",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 33,
+    "role": "Support Engineer",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Support Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "84653-103639",
+    "daily_tasks": [
+      "Perform core tasks related to support engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 34,
+    "role": "Solutions Architect",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Solutions Architect working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "88902-141416",
+    "daily_tasks": [
+      "Perform core tasks related to solutions architect",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 35,
+    "role": "AI Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "AI Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "50486-108777",
+    "daily_tasks": [
+      "Perform core tasks related to ai engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 36,
+    "role": "Data Scientist",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Data Scientist working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "83584-131641",
+    "daily_tasks": [
+      "Perform core tasks related to data scientist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 37,
+    "role": "Portfolio Analyst",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Portfolio Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "69705-173695",
+    "daily_tasks": [
+      "Perform core tasks related to portfolio analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 38,
+    "role": "Investment Analyst",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Investment Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "51902-164809",
+    "daily_tasks": [
+      "Perform core tasks related to investment analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 39,
+    "role": "RegTech Specialist",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "RegTech Specialist working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "81790-158158",
+    "daily_tasks": [
+      "Perform core tasks related to regtech specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 40,
+    "role": "Digital Banking Specialist",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Digital Banking Specialist working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "75666-110188",
+    "daily_tasks": [
+      "Perform core tasks related to digital banking specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 41,
+    "role": "Payments Engineer",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Payments Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "86683-162303",
+    "daily_tasks": [
+      "Perform core tasks related to payments engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 42,
+    "role": "Open Banking Specialist",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Open Banking Specialist working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "94931-163575",
+    "daily_tasks": [
+      "Perform core tasks related to open banking specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 43,
+    "role": "Financial Planner",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Financial Planner working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "79923-154431",
+    "daily_tasks": [
+      "Perform core tasks related to financial planner",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 44,
+    "role": "Crypto Analyst",
+    "industry": "Fintech",
+    "seniority": "Junior",
+    "summary": "Crypto Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "59578-134622",
+    "daily_tasks": [
+      "Perform core tasks related to crypto analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 45,
+    "role": "Derivatives Analyst",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "Derivatives Analyst working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "75787-144005",
+    "daily_tasks": [
+      "Perform core tasks related to derivatives analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 46,
+    "role": "Market Data Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Market Data Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "73833-110223",
+    "daily_tasks": [
+      "Perform core tasks related to market data engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 47,
+    "role": "Lending Specialist",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Lending Specialist working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "64780-158282",
+    "daily_tasks": [
+      "Perform core tasks related to lending specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 48,
+    "role": "WealthTech Engineer",
+    "industry": "Fintech",
+    "seniority": "Mid",
+    "summary": "WealthTech Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "78531-196541",
+    "daily_tasks": [
+      "Perform core tasks related to wealthtech engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 49,
+    "role": "Core Banking Engineer",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Core Banking Engineer working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "70503-194385",
+    "daily_tasks": [
+      "Perform core tasks related to core banking engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 50,
+    "role": "Remittance Specialist",
+    "industry": "Fintech",
+    "seniority": "Senior",
+    "summary": "Remittance Specialist working in fintech domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "89696-176383",
+    "daily_tasks": [
+      "Perform core tasks related to remittance specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 51,
+    "role": "Solar Energy Engineer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Solar Energy Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "66972-197733",
+    "daily_tasks": [
+      "Perform core tasks related to solar energy engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 52,
+    "role": "Wind Technician",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Wind Technician working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "50234-111294",
+    "daily_tasks": [
+      "Perform core tasks related to wind technician",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 53,
+    "role": "Energy Data Scientist",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Energy Data Scientist working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "88721-112505",
+    "daily_tasks": [
+      "Perform core tasks related to energy data scientist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 54,
+    "role": "Grid Engineer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Grid Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "82355-133854",
+    "daily_tasks": [
+      "Perform core tasks related to grid engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 55,
+    "role": "Battery Engineer",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Battery Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "69175-104190",
+    "daily_tasks": [
+      "Perform core tasks related to battery engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 56,
+    "role": "EV Infrastructure Specialist",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "EV Infrastructure Specialist working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "56336-110759",
+    "daily_tasks": [
+      "Perform core tasks related to ev infrastructure specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 57,
+    "role": "Sustainability Analyst",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Sustainability Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "59171-183480",
+    "daily_tasks": [
+      "Perform core tasks related to sustainability analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 58,
+    "role": "Climate Policy Analyst",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Climate Policy Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "94488-187056",
+    "daily_tasks": [
+      "Perform core tasks related to climate policy analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 59,
+    "role": "Hydrogen Engineer",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Hydrogen Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "86296-160992",
+    "daily_tasks": [
+      "Perform core tasks related to hydrogen engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 60,
+    "role": "Carbon Analyst",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Carbon Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "59685-150537",
+    "daily_tasks": [
+      "Perform core tasks related to carbon analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 61,
+    "role": "Energy Trader",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Energy Trader working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "57055-176186",
+    "daily_tasks": [
+      "Perform core tasks related to energy trader",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 62,
+    "role": "Environmental Engineer",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Environmental Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "87773-141556",
+    "daily_tasks": [
+      "Perform core tasks related to environmental engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 63,
+    "role": "Renewable Project Manager",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Renewable Project Manager working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "99601-116061",
+    "daily_tasks": [
+      "Perform core tasks related to renewable project manager",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 64,
+    "role": "Energy Consultant",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Energy Consultant working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "75861-126157",
+    "daily_tasks": [
+      "Perform core tasks related to energy consultant",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 65,
+    "role": "Smart Grid Specialist",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Smart Grid Specialist working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "67897-166064",
+    "daily_tasks": [
+      "Perform core tasks related to smart grid specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 66,
+    "role": "Energy Storage Specialist",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Energy Storage Specialist working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "59239-112638",
+    "daily_tasks": [
+      "Perform core tasks related to energy storage specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 67,
+    "role": "Power Systems Engineer",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Power Systems Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "78692-124416",
+    "daily_tasks": [
+      "Perform core tasks related to power systems engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 68,
+    "role": "Solar Installer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Solar Installer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "61208-167985",
+    "daily_tasks": [
+      "Perform core tasks related to solar installer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 69,
+    "role": "Wind Farm Manager",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Wind Farm Manager working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "94125-116104",
+    "daily_tasks": [
+      "Perform core tasks related to wind farm manager",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 70,
+    "role": "Energy Auditor",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Energy Auditor working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "50228-199999",
+    "daily_tasks": [
+      "Perform core tasks related to energy auditor",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 71,
+    "role": "Bioenergy Engineer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Bioenergy Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "54263-149236",
+    "daily_tasks": [
+      "Perform core tasks related to bioenergy engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 72,
+    "role": "Geothermal Engineer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Geothermal Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "91921-176821",
+    "daily_tasks": [
+      "Perform core tasks related to geothermal engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 73,
+    "role": "Water Resource Engineer",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Water Resource Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "55571-114064",
+    "daily_tasks": [
+      "Perform core tasks related to water resource engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 74,
+    "role": "Environmental Data Analyst",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Environmental Data Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "78532-128684",
+    "daily_tasks": [
+      "Perform core tasks related to environmental data analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 75,
+    "role": "Energy Economist",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Energy Economist working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "96173-151012",
+    "daily_tasks": [
+      "Perform core tasks related to energy economist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 76,
+    "role": "Clean Tech Researcher",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Clean Tech Researcher working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "92678-180930",
+    "daily_tasks": [
+      "Perform core tasks related to clean tech researcher",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 77,
+    "role": "Carbon Credit Trader",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Carbon Credit Trader working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "62652-194815",
+    "daily_tasks": [
+      "Perform core tasks related to carbon credit trader",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 78,
+    "role": "ESG Analyst",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "ESG Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "86500-136708",
+    "daily_tasks": [
+      "Perform core tasks related to esg analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 79,
+    "role": "Green Finance Specialist",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Green Finance Specialist working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "98970-159182",
+    "daily_tasks": [
+      "Perform core tasks related to green finance specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 80,
+    "role": "Climate Risk Analyst",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Climate Risk Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "66347-128787",
+    "daily_tasks": [
+      "Perform core tasks related to climate risk analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 81,
+    "role": "Energy Software Engineer",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Energy Software Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "92394-141901",
+    "daily_tasks": [
+      "Perform core tasks related to energy software engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 82,
+    "role": "Renewable Systems Designer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Renewable Systems Designer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "80781-130363",
+    "daily_tasks": [
+      "Perform core tasks related to renewable systems designer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 83,
+    "role": "Electric Mobility Engineer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Electric Mobility Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "77355-116465",
+    "daily_tasks": [
+      "Perform core tasks related to electric mobility engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 84,
+    "role": "Sustainability Consultant",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Sustainability Consultant working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "84708-132374",
+    "daily_tasks": [
+      "Perform core tasks related to sustainability consultant",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 85,
+    "role": "Energy Operations Manager",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Energy Operations Manager working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "53338-191853",
+    "daily_tasks": [
+      "Perform core tasks related to energy operations manager",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 86,
+    "role": "Solar Project Developer",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Solar Project Developer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "70913-166198",
+    "daily_tasks": [
+      "Perform core tasks related to solar project developer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 87,
+    "role": "Wind Resource Analyst",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Wind Resource Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "93983-123960",
+    "daily_tasks": [
+      "Perform core tasks related to wind resource analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 88,
+    "role": "Battery Systems Analyst",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Battery Systems Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "71935-191270",
+    "daily_tasks": [
+      "Perform core tasks related to battery systems analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 89,
+    "role": "Grid Operations Analyst",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Grid Operations Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "54314-189773",
+    "daily_tasks": [
+      "Perform core tasks related to grid operations analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 90,
+    "role": "Power Electronics Engineer",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Power Electronics Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "69688-174890",
+    "daily_tasks": [
+      "Perform core tasks related to power electronics engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 91,
+    "role": "Energy Market Analyst",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Energy Market Analyst working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "87915-189437",
+    "daily_tasks": [
+      "Perform core tasks related to energy market analyst",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 92,
+    "role": "Renewable Asset Manager",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Renewable Asset Manager working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "84393-195358",
+    "daily_tasks": [
+      "Perform core tasks related to renewable asset manager",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 93,
+    "role": "Climate Data Scientist",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Climate Data Scientist working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "96758-183415",
+    "daily_tasks": [
+      "Perform core tasks related to climate data scientist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 94,
+    "role": "Environmental Compliance Officer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Environmental Compliance Officer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "80718-178245",
+    "daily_tasks": [
+      "Perform core tasks related to environmental compliance officer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 95,
+    "role": "Green Building Engineer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Green Building Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "74135-150307",
+    "daily_tasks": [
+      "Perform core tasks related to green building engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 96,
+    "role": "Sustainable Materials Engineer",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Sustainable Materials Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "61925-104105",
+    "daily_tasks": [
+      "Perform core tasks related to sustainable materials engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 97,
+    "role": "Circular Economy Specialist",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Circular Economy Specialist working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "97928-157343",
+    "daily_tasks": [
+      "Perform core tasks related to circular economy specialist",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 98,
+    "role": "Energy Policy Advisor",
+    "industry": "Green Energy",
+    "seniority": "Mid",
+    "summary": "Energy Policy Advisor working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "93312-160440",
+    "daily_tasks": [
+      "Perform core tasks related to energy policy advisor",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 99,
+    "role": "Offshore Wind Engineer",
+    "industry": "Green Energy",
+    "seniority": "Senior",
+    "summary": "Offshore Wind Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "77749-178269",
+    "daily_tasks": [
+      "Perform core tasks related to offshore wind engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  },
+  {
+    "id": 100,
+    "role": "Renewable Integration Engineer",
+    "industry": "Green Energy",
+    "seniority": "Junior",
+    "summary": "Renewable Integration Engineer working in green energy domain.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Communication",
+      "Problem Solving",
+      "Domain Knowledge"
+    ],
+    "tech_stack": [
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "salary_range_usd": "97989-101280",
+    "daily_tasks": [
+      "Perform core tasks related to renewable integration engineer",
+      "Analyze data and generate insights",
+      "Collaborate with cross-functional teams",
+      "Improve system/process efficiency",
+      "Document work and report progress"
+    ]
+  }
+]
