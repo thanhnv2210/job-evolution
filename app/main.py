@@ -4,19 +4,23 @@ from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 
-from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
 
-from .database import AsyncSessionLocal, engine, get_db
-from .db_models import ScoreRecord
-from .logging_config import configure_logging
-from .models import Job, JobScoreResponse
-from .scorer import score_job
-
+# load_dotenv() must run before any local imports that read env vars at
+# module level (database.py reads DATABASE_URL when the module is imported)
 load_dotenv()
+
+from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException  # noqa: E402
+from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
+from sqlalchemy import select  # noqa: E402
+from sqlalchemy.ext.asyncio import AsyncSession  # noqa: E402
+
+from .database import AsyncSessionLocal, engine, get_db  # noqa: E402
+from .db_models import ScoreRecord  # noqa: E402
+from .logging_config import configure_logging  # noqa: E402
+from .models import Job, JobScoreResponse  # noqa: E402
+from .scorer import score_job  # noqa: E402
+
 configure_logging()
 
 log = logging.getLogger(__name__)
