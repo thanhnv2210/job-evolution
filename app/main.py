@@ -1,5 +1,7 @@
+import asyncio
 import json
 import logging
+import os
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -215,30 +217,52 @@ async def get_score_history(job_id: int, db: AsyncSession = Depends(get_db)):
     return [_record_to_response(r) for r in records]
 
 
-async def _score_all_background():
+# Max concurrent LLM calls in score-all. Keeps us within Anthropic rate
+# limits and avoids saturating the DB connection pool.
+# Override with SCORER_CONCURRENCY env var (default: 5).
+_SCORER_CONCURRENCY = int(os.getenv("SCORER_CONCURRENCY", "5"))
+
+
+async def _score_one(job_id: int, sem: asyncio.Semaphore) -> None:
+    """Score a single job under the shared semaphore and persist to DB."""
+    job = _jobs[job_id]
+    async with sem:
+        log.info("Background scoring job %d (%s)", job_id, job.role)
+        try:
+            result = await score_job(job)
+        except Exception:
+            log.exception("Background scoring failed for job %d", job_id)
+            return
+
+    # DB write outside the semaphore — doesn't consume an LLM slot
     async with AsyncSessionLocal() as db:
-        for job_id, job in _jobs.items():
-            if job_id not in _scores:
-                log.info("Background scoring job %d (%s)", job_id, job.role)
-                try:
-                    result = await score_job(job)
-                    now = datetime.now(timezone.utc)
-                    record = ScoreRecord(
-                        job_id=result.job_id,
-                        role=result.role,
-                        industry=result.industry,
-                        seniority=result.seniority,
-                        overall_score=result.overall_score,
-                        task_scores=[ts.model_dump() for ts in result.task_scores],
-                        model_used=result.model_used or "unknown",
-                        scored_at=now,
-                    )
-                    db.add(record)
-                    await db.commit()
-                    await db.refresh(record)
-                    _scores[job_id] = result.model_copy(update={"scored_at": record.scored_at})
-                except Exception:
-                    log.exception("Background scoring failed for job %d", job_id)
+        record = ScoreRecord(
+            job_id=result.job_id,
+            role=result.role,
+            industry=result.industry,
+            seniority=result.seniority,
+            overall_score=result.overall_score,
+            task_scores=[ts.model_dump() for ts in result.task_scores],
+            model_used=result.model_used or "unknown",
+            scored_at=datetime.now(timezone.utc),
+        )
+        db.add(record)
+        await db.commit()
+        await db.refresh(record)
+        _scores[job_id] = result.model_copy(update={"scored_at": record.scored_at})
+
+
+async def _score_all_background():
+    pending = [jid for jid in _jobs if jid not in _scores]
+    if not pending:
+        return
+    sem = asyncio.Semaphore(_SCORER_CONCURRENCY)
+    log.info(
+        "Scoring %d jobs concurrently (concurrency=%d)",
+        len(pending),
+        _SCORER_CONCURRENCY,
+    )
+    await asyncio.gather(*(_score_one(jid, sem) for jid in pending))
 
 
 @app.post(
@@ -252,11 +276,12 @@ async def _score_all_background():
 )
 async def score_all(background_tasks: BackgroundTasks):
     pending = [jid for jid in _jobs if jid not in _scores]
-    log.info("Queuing background scoring for %d jobs", len(pending))
+    log.info("Queuing background scoring for %d jobs (concurrency=%d)", len(pending), _SCORER_CONCURRENCY)
     background_tasks.add_task(_score_all_background)
     return {
-        "message": f"Scoring {len(pending)} jobs in the background.",
+        "message": f"Scoring {len(pending)} jobs in the background (concurrency={_SCORER_CONCURRENCY}).",
         "pending_job_ids": pending,
+        "concurrency": _SCORER_CONCURRENCY,
     }
 
 
