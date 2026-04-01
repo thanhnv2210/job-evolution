@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from pydantic import BaseModel, Field
 
 
@@ -37,3 +39,5 @@ class JobScoreResponse(BaseModel):
     seniority: str
     task_scores: list[TaskScore]
     overall_score: float = Field(description="Mean automatability score across all tasks")
+    model_used: str | None = None
+    scored_at: datetime | None = None

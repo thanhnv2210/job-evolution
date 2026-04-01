@@ -1,12 +1,17 @@
 import json
 import logging
 from contextlib import asynccontextmanager
+from datetime import datetime, timezone
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
+from .database import AsyncSessionLocal, engine, get_db
+from .db_models import ScoreRecord
 from .logging_config import configure_logging
 from .models import Job, JobScoreResponse
 from .scorer import score_job
@@ -23,13 +28,49 @@ _jobs: dict[int, Job] = {}
 _scores: dict[int, JobScoreResponse] = {}
 
 
+def _record_to_response(record: ScoreRecord) -> JobScoreResponse:
+    return JobScoreResponse(
+        job_id=record.job_id,
+        role=record.role,
+        industry=record.industry,
+        seniority=record.seniority,
+        task_scores=record.task_scores,
+        overall_score=record.overall_score,
+        model_used=record.model_used,
+        scored_at=record.scored_at,
+    )
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    # Create DB tables (idempotent)
+    from .db_models import ScoreRecord as _  # noqa: F401 — ensure ORM metadata loaded
+    async with engine.begin() as conn:
+        from .database import Base
+        await conn.run_sync(Base.metadata.create_all)
+    log.info("Database tables ensured")
+
+    # Load jobs from JSON
     raw = json.loads(DATA_FILE.read_text())
     for item in raw:
         job = Job(**item)
         _jobs[job.id] = job
     log.info("Loaded %d jobs from %s", len(_jobs), DATA_FILE.name)
+
+    # Pre-populate in-memory cache with latest scored result per job
+    async with AsyncSessionLocal() as session:
+        for job_id in _jobs:
+            result = await session.execute(
+                select(ScoreRecord)
+                .where(ScoreRecord.job_id == job_id)
+                .order_by(ScoreRecord.scored_at.desc())
+                .limit(1)
+            )
+            record = result.scalar_one_or_none()
+            if record:
+                _scores[job_id] = _record_to_response(record)
+
+    log.info("Pre-loaded %d cached scores from database", len(_scores))
     yield
     _jobs.clear()
     _scores.clear()
@@ -76,10 +117,15 @@ def get_job(job_id: int):
     summary="Score a job's tasks for AI automatability",
     description=(
         "Calls Claude to evaluate each daily task and returns a 0-100 "
-        "AI automatability score with reasoning. Results are cached in memory."
+        "AI automatability score with reasoning. Results are persisted to "
+        "the database and cached in memory."
     ),
 )
-async def score_job_endpoint(job_id: int, force: bool = False):
+async def score_job_endpoint(
+    job_id: int,
+    force: bool = False,
+    db: AsyncSession = Depends(get_db),
+):
     job = _jobs.get(job_id)
     if not job:
         raise HTTPException(status_code=404, detail=f"Job {job_id} not found")
@@ -95,8 +141,25 @@ async def score_job_endpoint(job_id: int, force: bool = False):
         log.exception("Failed to score job %d", job_id)
         raise HTTPException(status_code=500, detail="LLM scoring failed — check logs for details")
 
+    # Persist to DB
+    now = datetime.now(timezone.utc)
+    record = ScoreRecord(
+        job_id=result.job_id,
+        role=result.role,
+        industry=result.industry,
+        seniority=result.seniority,
+        overall_score=result.overall_score,
+        task_scores=[ts.model_dump() for ts in result.task_scores],
+        model_used=result.model_used or "unknown",
+        scored_at=now,
+    )
+    db.add(record)
+    await db.commit()
+    await db.refresh(record)
+
+    result = result.model_copy(update={"scored_at": record.scored_at})
     _scores[job_id] = result
-    log.info("Job %d scored — overall %.1f", job_id, result.overall_score)
+    log.info("Job %d scored — overall %.1f (model=%s)", job_id, result.overall_score, result.model_used)
     return result
 
 
@@ -105,25 +168,73 @@ async def score_job_endpoint(job_id: int, force: bool = False):
     response_model=JobScoreResponse,
     summary="Get cached score for a job (404 if not yet scored)",
 )
-def get_score(job_id: int):
+async def get_score(job_id: int, db: AsyncSession = Depends(get_db)):
     if job_id not in _jobs:
         raise HTTPException(status_code=404, detail=f"Job {job_id} not found")
-    if job_id not in _scores:
+
+    if job_id in _scores:
+        return _scores[job_id]
+
+    # Fallback: check DB directly (e.g. after a restart race)
+    result = await db.execute(
+        select(ScoreRecord)
+        .where(ScoreRecord.job_id == job_id)
+        .order_by(ScoreRecord.scored_at.desc())
+        .limit(1)
+    )
+    record = result.scalar_one_or_none()
+    if not record:
         raise HTTPException(
             status_code=404,
             detail=f"Job {job_id} has not been scored yet. POST /jobs/{job_id}/score first.",
         )
-    return _scores[job_id]
+    response = _record_to_response(record)
+    _scores[job_id] = response
+    return response
+
+
+@app.get(
+    "/jobs/{job_id}/score/history",
+    response_model=list[JobScoreResponse],
+    summary="Get all historical scores for a job (newest first)",
+)
+async def get_score_history(job_id: int, db: AsyncSession = Depends(get_db)):
+    if job_id not in _jobs:
+        raise HTTPException(status_code=404, detail=f"Job {job_id} not found")
+
+    result = await db.execute(
+        select(ScoreRecord)
+        .where(ScoreRecord.job_id == job_id)
+        .order_by(ScoreRecord.scored_at.desc())
+    )
+    records = result.scalars().all()
+    return [_record_to_response(r) for r in records]
 
 
 async def _score_all_background():
-    for job_id, job in _jobs.items():
-        if job_id not in _scores:
-            log.info("Background scoring job %d (%s)", job_id, job.role)
-            try:
-                _scores[job_id] = await score_job(job)
-            except Exception:
-                log.exception("Background scoring failed for job %d", job_id)
+    async with AsyncSessionLocal() as db:
+        for job_id, job in _jobs.items():
+            if job_id not in _scores:
+                log.info("Background scoring job %d (%s)", job_id, job.role)
+                try:
+                    result = await score_job(job)
+                    now = datetime.now(timezone.utc)
+                    record = ScoreRecord(
+                        job_id=result.job_id,
+                        role=result.role,
+                        industry=result.industry,
+                        seniority=result.seniority,
+                        overall_score=result.overall_score,
+                        task_scores=[ts.model_dump() for ts in result.task_scores],
+                        model_used=result.model_used or "unknown",
+                        scored_at=now,
+                    )
+                    db.add(record)
+                    await db.commit()
+                    await db.refresh(record)
+                    _scores[job_id] = result.model_copy(update={"scored_at": record.scored_at})
+                except Exception:
+                    log.exception("Background scoring failed for job %d", job_id)
 
 
 @app.post(

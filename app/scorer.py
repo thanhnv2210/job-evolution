@@ -55,7 +55,7 @@ Return ONLY valid JSON, no markdown fences.\
 """
 
 
-def build_response(job: Job, data: dict) -> JobScoreResponse:
+def build_response(job: Job, data: dict, model_used: str) -> JobScoreResponse:
     task_scores = [TaskScore(**item) for item in data["task_scores"]]
     overall = round(sum(ts.score for ts in task_scores) / len(task_scores), 1)
     return JobScoreResponse(
@@ -65,6 +65,7 @@ def build_response(job: Job, data: dict) -> JobScoreResponse:
         seniority=job.seniority,
         task_scores=task_scores,
         overall_score=overall,
+        model_used=model_used,
     )
 
 
@@ -117,7 +118,7 @@ async def score_job(job: Job) -> JobScoreResponse:
         raw_text = next(
             block.text for block in final.content if block.type == "text"
         )
-        return build_response(job, json.loads(raw_text))
+        return build_response(job, json.loads(raw_text), model_used="claude-opus-4-6")
 
     except anthropic.BadRequestError as exc:
         if not _is_credit_error(exc):

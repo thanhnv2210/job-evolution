@@ -80,4 +80,4 @@ async def score_job_ollama(job: Job) -> JobScoreResponse:
             f"Ollama returned non-JSON for job {job.id}: {raw_text[:300]}"
         ) from exc
 
-    return build_response(job, data)
+    return build_response(job, data, model_used=f"ollama/{_OLLAMA_MODEL}")

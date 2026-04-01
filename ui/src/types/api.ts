@@ -23,6 +23,8 @@ export type JobScoreResponse = {
   seniority: string
   task_scores: TaskScore[]
   overall_score: number
+  model_used: string | null
+  scored_at: string | null
 }
 
 export type IndustrySummary = {
