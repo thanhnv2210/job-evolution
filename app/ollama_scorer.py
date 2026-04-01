@@ -7,11 +7,11 @@ call it directly with httpx — no extra dependency required.
 Setup (one-time):
     brew install ollama          # or: https://ollama.com
     ollama serve                 # starts the daemon on :11434
-    ollama pull llama3.2         # ~2 GB — or any model you prefer
+    ollama pull mistral          # default model (already present if available)
 
 Environment variables (optional, sensible defaults provided):
     OLLAMA_BASE_URL   default: http://localhost:11434
-    OLLAMA_MODEL      default: llama3.2
+    OLLAMA_MODEL      default: mistral
 """
 import json
 import logging
@@ -26,7 +26,7 @@ from .scorer import SYSTEM_PROMPT, build_user_prompt, build_response
 log = logging.getLogger(__name__)
 
 _OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-_OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2")
+_OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "mistral")
 _TIMEOUT = httpx.Timeout(connect=10.0, read=300.0, write=30.0, pool=10.0)
 
 
