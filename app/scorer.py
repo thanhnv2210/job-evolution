@@ -32,24 +32,9 @@ regulatory constraints, creative demands, and interpersonal complexity.\
 """
 
 
-def get_client() -> anthropic.AsyncAnthropic:
-    global _client
-    if _client is None:
-        _client = anthropic.AsyncAnthropic(timeout=_TIMEOUT)
-        log.debug(
-            "Anthropic client created (connect=%.0fs read=%.0fs)",
-            _TIMEOUT.connect,
-            _TIMEOUT.read,
-        )
-    return _client
-
-
-async def score_job(job: Job) -> JobScoreResponse:
-    """Score each daily task of a job for AI automatability using Claude."""
-    client = get_client()
-
+def build_user_prompt(job: Job) -> str:
     task_list = "\n".join(f"- {task}" for task in job.daily_tasks)
-    user_prompt = f"""\
+    return f"""\
 Score the AI automatability of each daily task for the following role:
 
 Role: {job.role}
@@ -69,37 +54,10 @@ Return a JSON object with a "task_scores" array. Each element must have:
 Return ONLY valid JSON, no markdown fences.\
 """
 
-    # Use streaming to avoid HTTP timeouts on longer responses
-    task_scores: list[TaskScore] = []
 
-    log.debug("Calling Claude for job %d (%s)", job.id, job.role)
-    async with client.messages.stream(
-        model="claude-opus-4-6",
-        max_tokens=4096,
-        thinking={"type": "adaptive"},
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_prompt}],
-    ) as stream:
-        final = await stream.get_final_message()
-
-    log.debug(
-        "Claude responded for job %d — input_tokens=%s output_tokens=%s",
-        job.id,
-        final.usage.input_tokens,
-        final.usage.output_tokens,
-    )
-
-    # Extract JSON from the text response
-    raw_text = next(
-        block.text for block in final.content if block.type == "text"
-    )
-    data = json.loads(raw_text)
-
-    for item in data["task_scores"]:
-        task_scores.append(TaskScore(**item))
-
+def build_response(job: Job, data: dict) -> JobScoreResponse:
+    task_scores = [TaskScore(**item) for item in data["task_scores"]]
     overall = round(sum(ts.score for ts in task_scores) / len(task_scores), 1)
-
     return JobScoreResponse(
         job_id=job.id,
         role=job.role,
@@ -108,3 +66,67 @@ Return ONLY valid JSON, no markdown fences.\
         task_scores=task_scores,
         overall_score=overall,
     )
+
+
+def get_client() -> anthropic.AsyncAnthropic:
+    global _client
+    if _client is None:
+        _client = anthropic.AsyncAnthropic(timeout=_TIMEOUT)
+        log.debug(
+            "Anthropic client created (connect=%.0fs read=%.0fs)",
+            _TIMEOUT.connect,
+            _TIMEOUT.read,
+        )
+    return _client
+
+
+def _is_credit_error(exc: anthropic.BadRequestError) -> bool:
+    try:
+        return "credit balance is too low" in exc.body["error"]["message"]
+    except (TypeError, KeyError):
+        return False
+
+
+async def score_job(job: Job) -> JobScoreResponse:
+    """Score each daily task for AI automatability.
+
+    Primary path: Claude Opus 4.6 (Anthropic).
+    Fallback: local Ollama model — activated automatically when Anthropic
+    returns a 400 'credit balance too low' error.
+    """
+    client = get_client()
+
+    log.debug("Calling Claude for job %d (%s)", job.id, job.role)
+    try:
+        async with client.messages.stream(
+            model="claude-opus-4-6",
+            max_tokens=4096,
+            thinking={"type": "adaptive"},
+            system=SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": build_user_prompt(job)}],
+        ) as stream:
+            final = await stream.get_final_message()
+
+        log.debug(
+            "Claude responded for job %d — input_tokens=%s output_tokens=%s",
+            job.id,
+            final.usage.input_tokens,
+            final.usage.output_tokens,
+        )
+
+        raw_text = next(
+            block.text for block in final.content if block.type == "text"
+        )
+        return build_response(job, json.loads(raw_text))
+
+    except anthropic.BadRequestError as exc:
+        if not _is_credit_error(exc):
+            raise
+        log.warning(
+            "Anthropic credit exhausted for job %d — switching to Ollama fallback",
+            job.id,
+        )
+
+    # Import here to avoid a circular dependency at module load time
+    from .ollama_scorer import score_job_ollama
+    return await score_job_ollama(job)
