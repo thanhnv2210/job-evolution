@@ -1,10 +1,11 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { AlertCircle, Loader2, RefreshCw } from 'lucide-react'
 import { IndustryGrid } from './IndustryGrid'
+import { JobListPanel } from '@/components/jobs/JobListPanel'
 import { useJobs } from '@/hooks/useJobs'
 import { useAllScores } from '@/hooks/useAllScores'
 import { useSelection } from '@/context/SelectionContext'
-import type { IndustrySummary } from '@/types/api'
+import type { IndustrySummary, JobScoreResponse } from '@/types/api'
 
 export function HeatmapView() {
   const { jobs, loading: jobsLoading, error: jobsError } = useJobs()
@@ -12,16 +13,24 @@ export function HeatmapView() {
   const jobIds = useMemo(() => jobs.map(j => j.id), [jobs])
   const { scores, loading: scoresLoading, refetch } = useAllScores(jobIds)
 
-  const { selectedIndustry, setSelectedIndustry } = useSelection()
+  // On-demand scores fetched when a user expands a job card that wasn't in the bulk load
+  const [extraScores, setExtraScores] = useState<Map<number, JobScoreResponse>>(new Map())
+
+  const { selectedIndustry, selectedJobId, setSelectedIndustry, setSelectedJobId } = useSelection()
+
+  // Merge bulk-loaded scores with any on-demand scores
+  const scoreMap = useMemo(() => {
+    const map = new Map<number, JobScoreResponse>(scores.map(s => [s.job_id, s]))
+    extraScores.forEach((s, id) => map.set(id, s))
+    return map
+  }, [scores, extraScores])
 
   const industryData = useMemo((): IndustrySummary[] => {
-    const scoreMap = new Map(scores.map(s => [s.job_id, s.overall_score]))
-
     const byIndustry = new Map<string, { jobCount: number; scoreValues: number[] }>()
     for (const job of jobs) {
       const entry = byIndustry.get(job.industry) ?? { jobCount: 0, scoreValues: [] }
       entry.jobCount++
-      const s = scoreMap.get(job.id)
+      const s = scoreMap.get(job.id)?.overall_score
       if (s !== undefined) entry.scoreValues.push(s)
       byIndustry.set(job.industry, entry)
     }
@@ -37,7 +46,27 @@ export function HeatmapView() {
             : null,
       }))
       .sort((a, b) => (b.avgScore ?? -1) - (a.avgScore ?? -1))
-  }, [jobs, scores])
+  }, [jobs, scoreMap])
+
+  const industryJobs = useMemo(
+    () => (selectedIndustry ? jobs.filter(j => j.industry === selectedIndustry) : []),
+    [jobs, selectedIndustry],
+  )
+
+  function handleSelectIndustry(industry: string) {
+    // Clicking the same bar again deselects
+    if (industry === selectedIndustry) {
+      setSelectedIndustry(null)
+      setSelectedJobId(null)
+    } else {
+      setSelectedIndustry(industry)
+      setSelectedJobId(null)
+    }
+  }
+
+  function handleScoreLoaded(score: JobScoreResponse) {
+    setExtraScores(prev => new Map(prev).set(score.job_id, score))
+  }
 
   if (jobsLoading) {
     return (
@@ -61,8 +90,8 @@ export function HeatmapView() {
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <p className="text-sm text-slate-400">
-          {scores.length > 0
-            ? `${scores.length} of ${jobs.length} jobs scored`
+          {scoreMap.size > 0
+            ? `${scoreMap.size} of ${jobs.length} jobs scored`
             : 'No scores loaded — click Refresh to pull cached scores from the backend'}
         </p>
         <button
@@ -78,21 +107,18 @@ export function HeatmapView() {
       <IndustryGrid
         data={industryData}
         selectedIndustry={selectedIndustry}
-        onSelect={setSelectedIndustry}
+        onSelect={handleSelectIndustry}
       />
 
       {selectedIndustry && (
-        <p className="text-center text-sm text-slate-400">
-          Filtering by{' '}
-          <span className="font-medium text-white">{selectedIndustry}</span>
-          {' · '}
-          <button
-            onClick={() => setSelectedIndustry(null)}
-            className="underline decoration-dotted hover:text-slate-200"
-          >
-            clear
-          </button>
-        </p>
+        <JobListPanel
+          industry={selectedIndustry}
+          jobs={industryJobs}
+          scoreMap={scoreMap}
+          selectedJobId={selectedJobId}
+          onSelectJob={setSelectedJobId}
+          onScoreLoaded={handleScoreLoaded}
+        />
       )}
     </div>
   )
