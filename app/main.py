@@ -1,14 +1,19 @@
 import json
+import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from dotenv import load_dotenv
 
+from .logging_config import configure_logging
 from .models import Job, JobScoreResponse
 from .scorer import score_job
 
 load_dotenv()
+configure_logging()
+
+log = logging.getLogger(__name__)
 
 DATA_FILE = Path(__file__).parent.parent / "data" / "fintech_green_jobs_100.json"
 
@@ -23,7 +28,7 @@ async def lifespan(app: FastAPI):
     for item in raw:
         job = Job(**item)
         _jobs[job.id] = job
-    print(f"Loaded {len(_jobs)} jobs from {DATA_FILE.name}")
+    log.info("Loaded %d jobs from %s", len(_jobs), DATA_FILE.name)
     yield
     _jobs.clear()
     _scores.clear()
@@ -40,7 +45,7 @@ app = FastAPI(
 )
 
 
-# ── Job listing ─────────────────────────────────────────────────────────────
+# ── Job listing ──────────────────────────────────────────────────────────────
 
 @app.get("/jobs", response_model=list[Job], summary="List all jobs")
 def list_jobs():
@@ -72,10 +77,18 @@ async def score_job_endpoint(job_id: int, force: bool = False):
         raise HTTPException(status_code=404, detail=f"Job {job_id} not found")
 
     if not force and job_id in _scores:
+        log.debug("Cache hit for job %d", job_id)
         return _scores[job_id]
 
-    result = await score_job(job)
+    log.info("Scoring job %d (%s, %s)", job_id, job.role, job.seniority)
+    try:
+        result = await score_job(job)
+    except Exception:
+        log.exception("Failed to score job %d", job_id)
+        raise HTTPException(status_code=500, detail="LLM scoring failed — check logs for details")
+
     _scores[job_id] = result
+    log.info("Job %d scored — overall %.1f", job_id, result.overall_score)
     return result
 
 
@@ -98,7 +111,11 @@ def get_score(job_id: int):
 async def _score_all_background():
     for job_id, job in _jobs.items():
         if job_id not in _scores:
-            _scores[job_id] = await score_job(job)
+            log.info("Background scoring job %d (%s)", job_id, job.role)
+            try:
+                _scores[job_id] = await score_job(job)
+            except Exception:
+                log.exception("Background scoring failed for job %d", job_id)
 
 
 @app.post(
@@ -112,6 +129,7 @@ async def _score_all_background():
 )
 async def score_all(background_tasks: BackgroundTasks):
     pending = [jid for jid in _jobs if jid not in _scores]
+    log.info("Queuing background scoring for %d jobs", len(pending))
     background_tasks.add_task(_score_all_background)
     return {
         "message": f"Scoring {len(pending)} jobs in the background.",
@@ -119,11 +137,9 @@ async def score_all(background_tasks: BackgroundTasks):
     }
 
 
-@app.delete(
-    "/scores",
-    summary="Clear all cached scores",
-)
+@app.delete("/scores", summary="Clear all cached scores")
 def clear_scores():
     count = len(_scores)
     _scores.clear()
+    log.info("Cleared %d cached scores", count)
     return {"cleared": count}

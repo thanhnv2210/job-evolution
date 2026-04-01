@@ -1,6 +1,10 @@
 import json
+import logging
+
 import anthropic
 from .models import Job, TaskScore, JobScoreResponse
+
+log = logging.getLogger(__name__)
 
 _client: anthropic.AsyncAnthropic | None = None
 
@@ -56,6 +60,7 @@ Return ONLY valid JSON, no markdown fences.\
     # Use streaming to avoid HTTP timeouts on longer responses
     task_scores: list[TaskScore] = []
 
+    log.debug("Calling Claude for job %d (%s)", job.id, job.role)
     async with client.messages.stream(
         model="claude-opus-4-6",
         max_tokens=4096,
@@ -64,6 +69,13 @@ Return ONLY valid JSON, no markdown fences.\
         messages=[{"role": "user", "content": user_prompt}],
     ) as stream:
         final = await stream.get_final_message()
+
+    log.debug(
+        "Claude responded for job %d — input_tokens=%s output_tokens=%s",
+        job.id,
+        final.usage.input_tokens,
+        final.usage.output_tokens,
+    )
 
     # Extract JSON from the text response
     raw_text = next(
